@@ -1,0 +1,1573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="ECSHOP v2.7.3" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+
+<title>商品搜索_科学商城</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/ecmoban_jindong2013/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/utils.js"></script><script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/global.js"></script><script type="text/javascript" src="js/compare.js"></script></head>
+<body>
+<meta name="baidu-site-verification" content="8DttTkkBMS" />
+
+<link href="themes/ecmoban_jindong2013/qq/images/qq.css" rel="stylesheet" type="text/css" />
+<link href="themes/ecmoban_jindong2013/base.css" rel="stylesheet" type="text/css">
+<link href="themes/ecmoban_jindong2013/home.css" rel="stylesheet" type="text/css">
+<script language='javascript' src='themes/ecmoban_jindong2013/qq/ServiceQQ.js' type='text/javascript' charset='utf-8'></script>
+<script type="text/javascript">
+var process_request = "正在处理您的请求...";
+</script>
+
+<ul id="top_nav_ul">
+
+<div class="block" id="body_header" style=" position:relative">
+
+			    
+<div style="float:right; height:31px; padding-left:28px;">
+					</div> 
+            
+<div  style="float:right; color:#acacac; padding-right:15px;">         
+   <script type="text/javascript" src="js/transport.js"></script>   <font id="ECS_MEMBERZONE" style="height: 30px;line-height: 30px;display: inline-block;">您好，欢迎来到科学出版社 ！
+ <a href="user.php" id="login">[请登录]</a>，新用户？
+ <a href="user.php?act=register">[免费注册]</a>
+ 
+ <a href="user.php?act=oath&type=qq"><img style="vertical-align: middle;" src="themes/ecmoban_jindong2013/images/qq_logins_24.png"></a>
+ <a href="user.php?act=oath&type=alipay"><img style="vertical-align: middle;" src="themes/ecmoban_jindong2013/images/alipay_login_20.png"></a>
+ <a href="user.php?act=oath&type=weibo"><img style="vertical-align: middle;" src="themes/ecmoban_jindong2013/images/sina_login_logo.gif"></a>
+ <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx71b40a9b2a54ce97&response_type=code&scope=snsapi_login&redirect_uri=http%3A%2F%2Fwww.ecsponline.com%2Fuser.php&state=ccdded52c1290c0bb5a9fbc13deb339d#wechat_redirect"><img style="vertical-align: middle;" src="themes/ecmoban_jindong2013/images/wechat_login.png"></a>
+ 
+ </font>
+</div>     
+         
+            
+      </div>         
+
+   
+	</ul>
+
+
+
+ <div style="clear:both"></div>
+    
+
+ 
+
+ <div class="block clearfix" style="position:relative; z-index:99997; height:90px;">
+ <div class="logo  " ><a  href="index.php" name="top"><img src="themes/ecmoban_jindong2013/images/logo.gif" /> </a></div>
+ 
+ 
+ 
+ 
+<div id="search" >
+ 
+   
+  <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  >
+  <div class="B_input_box">
+   <input name="keywords" type="text" id="keyword" placeholder='书名、书号、丛书名、作者或内容简介' value="" class="B_input"/>
+   </div>
+   <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
+    <!--<div style="margin-left:10px;float:left;width:40px"><a href="search.php?act=advanced_search">高级</br>搜索</a></div>-->
+   </form>
+   <div class="keys  ">
+   <script type="text/javascript">
+    
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+           alert("请输入搜索关键词！");
+            return false;
+        }
+    }
+    -->
+    
+    </script>
+      <b> 热门关键词：</b>
+      <a href="search.php?keywords=%E5%88%86%E5%AD%90%E5%85%8B%E9%9A%86%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%8D%97">分子克隆实验指南</a>
+      <a href="search.php?keywords=%E7%99%8C%E7%97%87%E6%82%A3%E8%80%85%E7%94%9F%E5%AD%98%E4%B9%8B%E8%B7%AF">癌症患者生存之路</a>
+        </div>
+</div>
+  <style>
+    #search {
+        
+    }
+    #con-qk {
+      width: 312px;
+      height: 85px;
+      float: left;
+    }
+    .dlt {
+      width: 1px;
+      height: 65px;
+      margin: 10px 4px 4px;
+      background: #bbb;
+      float: left;
+    }
+    #con-qk .con-qk-num { 
+        margin:10px 2px;
+        width:90px;height:65px;
+        float:left; 
+    }
+    #con-qk .con-qk-num  .num {
+        width:60px;
+        height:16px;
+        text-indent:-9999em
+        font-size: 1.4em;
+        position: relative;
+        top:22px;
+        left: 0px;
+    }
+    #con-qk .con-qk-num  .num-title {
+        width:60px;
+        height:16px;
+        font-size: 11px;
+        font-weight: bold;
+        position: relative;
+        top: 12px;
+        left: 0px;
+    }
+    #con-qk .con-qk-num  {
+
+    }
+  </style>
+
+	<div id="settleup-2013">
+			<dl id="ECS_CARTINFO" onMouseOver="this.className='hover'" onMouseOut="this.className=''">
+				<dt class="ld"><s></s><span class="shopping"><span id="shopping-amount">0</span></span><a href="flow.php" id="settleup-url">去购物车结算</a> <b></b> </dt>
+			             <dd><div class="prompt"><div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div></div></dd>
+        
+<script type="text/javascript">
+function deleteCartGoods(rec_id)
+{
+Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+      document.getElementById('ECS_CARTINFO').innerHTML = res.content;
+  }
+}
+</script>
+
+			</dl>
+		</div>
+
+		
+		<!--
+ <div class="buy_car_bg_box" style="float:right;  ">  
+ 	<dl id="ECS_CARTINFO" onMouseOver="this.className='hover'" onMouseOut="this.className=''">
+				<dt class="ld"><s></s><span class="shopping"><span id="shopping-amount">0</span></span><a href="flow.php" id="settleup-url">去购物车结算</a> <b></b> </dt>
+			             <dd><div class="prompt"><div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div></div></dd>
+        
+<script type="text/javascript">
+function deleteCartGoods(rec_id)
+{
+Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+      document.getElementById('ECS_CARTINFO').innerHTML = res.content;
+  }
+}
+</script>
+
+			</dl>
+ 
+<div class="buy_car_bg " id="ECS_CARTINFO" onmouseover="this.className='buy_car_bg ul1_on'" onmouseout="this.className='buy_car_bg'">
+
+ 
+ <a   href="flow.php"><dt class="ld"><s></s><span class="shopping"><span id="shopping-amount">0</span></span><a href="flow.php" id="settleup-url">去购物车结算</a> <b></b> </dt>
+			             <dd><div class="prompt"><div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div></div></dd>
+        
+<script type="text/javascript">
+function deleteCartGoods(rec_id)
+{
+Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+      document.getElementById('ECS_CARTINFO').innerHTML = res.content;
+  }
+}
+</script>
+
+</a>
+   <div class="dang"></div>
+</div> 
+
+</div> -->
+ 
+
+ 
+  
+ 
+  
+ 
+ 
+</div>
+
+ 
+ <div style="clear:both"></div>
+
+<div   class="block clearfix" style=" position:relative; z-index:9999; ">
+<div id="mainNav" class="clearfix">
+
+<div class="category_all2"  onmouseover="this.className='category_all2 category_all2_on'" onmouseout="this.className='category_all2'">
+<div class="all">全部商品分类</div>
+
+
+ 
+
+
+
+</div>
+
+
+  <a class="aa" href="index.php"   id="aa_on"   >网上书店 </a>
+  
+  
+   
+  <a  class="aa"   href="index.php?t=p" >按需印刷</a>
+ 
+  
+  <a  class="aa"   href="index.php?t=e" >电子书</a>
+ 
+  
+  <a  class="aa"   href="index.php?t=ts" >教学服务</a>
+ 
+  
+  <a  class="aa"   href="#" >馆配服务</a>
+ 
+  
+ 
+ <div class="mainNav_r">
+ <a href="message.php"><img src="themes/ecmoban_jindong2013/images/meun_r.gif"></a>
+ 
+ </div>
+  
+ 
+ </div>
+</div>
+ 
+
+
+
+
+
+
+ 
+
+<div class="blank"></div>
+  <div class="block box">
+<div class="blank"></div>
+ <div id="ur_here">
+当前位置:  <code>&gt;</code> 商品搜索 
+</div>
+</div>
+<div class="blank"></div>
+<div class="block clearfix">
+  
+  <div class="AreaL">
+    
+
+    
+
+  </div>
+  
+  
+  <div class="AreaR" style="width:1000px;margin: 0 auto;">
+
+   
+
+    <div class="box">
+     <div class="box_1">
+      <h3><span>商品筛选</span></h3>
+
+      <div class="screeBox">
+        <strong>书目类别：</strong>
+                <span>全部</span>
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=45&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">科普读物</a>(1047)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=31&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">数学</a>(1003)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=32&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">物理</a>(446)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=52320&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">力学</a>(193)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=33&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">化学</a>(227)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=34&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">地球天文</a>(1075)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=36&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">生命科学</a>(1238)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=41&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">医药卫生</a>(1837)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=37&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">农业科学</a>(787)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=35&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">环境安全</a>(760)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=38&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">自然科学总论</a>(592)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=39&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">工程技术</a>(2674)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=40&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">信息技术</a>(1439)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=42&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">考古/历史</a>(1187)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=43&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">社科/经管/语言/法律</a>(2172)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=44&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">教育/体育/文化/艺术</a>(434)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=46&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">哲学/政治/民族/军事</a>(61)&nbsp;
+                                <a href="javascript:window.location='?keywords=&intro=&support=&category=52415&display=list&price_min=&price_max=&page=734&sort=relevant&order=DESC'" class="current">学习考试</a>(179)&nbsp;
+                      </div>
+
+
+     </div>
+    </div>
+    <div class="blank"></div>
+
+   
+
+
+
+
+  
+        <div class="box">
+     <div class="box_1">
+      <h3>
+    
+                 <span>搜索结果</span>
+                             <form action="search.php" method="post" class="sort" name="listform" id="form">
+          显示方式：
+          <a href="javascript:;" onClick="javascript:display_mode('list')"><img src="themes/ecmoban_jindong2013/images/display_mode_list_act.gif" alt=""></a>
+          <a href="javascript:;" onClick="javascript:display_mode('grid')"><img src="themes/ecmoban_jindong2013/images/display_mode_grid.gif" alt=""></a>&nbsp;&nbsp;
+               <select name="sort">
+              <option value="goods_id">按上架时间排序</option><option value="shop_price">按价格排序</option><option value="last_update">按更新时间排序</option><option value="salesnum">按销量排序</option><option value="relevant" selected>按相关度排序</option>              </select>
+              <select name="order">
+              <option value="DESC" selected>倒序</option><option value="ASC">正序</option>              </select>
+              <input type="image" name="imageField" src="themes/ecmoban_jindong2013/images/bnt_go.gif" alt="go"/>
+              <input type="hidden" name="page" value="734" />
+              <input type="hidden" name="display" value="list" id="display" />
+                                                              <input type="hidden" name="keywords" value="" />
+                                                                                            <input type="hidden" name="category" value="0" />
+                                                                                            <input type="hidden" name="support" value="" />
+                                                                                            <input type="hidden" name="brand" value="0" />
+                                                                                                                                                    <input type="hidden" name="min_price" value="0" />
+                                                                                            <input type="hidden" name="max_price" value="0" />
+                                                                                            <input type="hidden" name="action" value="" />
+                                                                                            <input type="hidden" name="intro" value="" />
+                                                                                            <input type="hidden" name="goods_type" value="0" />
+                                                                                            <input type="hidden" name="sc_ds" value="0" />
+                                                                                            <input type="hidden" name="outstock" value="0" />
+                                                        </form>
+                     </h3>
+        
+          <form action="compare.php" method="post" name="compareForm" id="compareForm" onsubmit="return compareGoods(this);">
+                        <div class="goodsList">
+                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150974"><img src="book/2016/lt/9787030430649-001001-fcv_lt-v001.jpg" alt="病毒转基因技术原理" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150974" class="f6">
+                                                    病毒转基因技术原理<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030430649</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥28.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本教材由来自全国8所高等院校和科研院所的专家学者合作编写完成。重点介绍了常用病毒的转基因技术原理、纯化制备技术和医学应用现状。力图结合对病毒...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=150973"><img src="book/2018/lt/9787030430731-004019-fcv_lt.jpg" alt="医学微生物实验学" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150973" class="f6">
+                                                    医学微生物实验学<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030430731</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-01-01</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥39.80元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：全书包括微生物实验的基本技术，细菌学、真菌学及病毒学实验，临床标本的综合性实验及实验设计和微生物非培养法鉴定技术等6部分内容，分为44项共1...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150972"><img src="book/2016/lt/9787030450845-001001-fcv_lt-v001.jpg" alt="东亚应用伦理学的实践路径：第五届东亚应用伦理与应用哲学国际会议文集=Research on Practice Route of Applied Ethics in East Asia：英文" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150972" class="f6">
+                                                    东亚应用伦理学的实践路径：第五届东亚应用伦理与应用哲学国际会议文集=Research on Practice Route of Applied Ethics in East Asia：英文<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030450845</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-03-02</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥99.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：无...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=150971"><img src="book/2016/lt/9787030453174-001001-fcv_lt-v001.jpg" alt="心动力、新起点——大学新生心理适应" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150971" class="f6">
+                                                    心动力、新起点——大学新生心理适应<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030453174</td>
+                      <td>作者：张强 等</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-09-07</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥22.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书以积极心理学为导向，引领学生从进校开始，就着眼于认识自我、规划自我、管理自我、发展自我，并在这一过程中主动培养和塑造爱、创新、坚持、行动...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150970"><img src="book/2016/lt/9787030455765-001001-fcv_lt-v001.jpg" alt="足迹、遗迹、心迹——河北省第三次全国文物普查队员手记汇编" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150970" class="f6">
+                                                    足迹、遗迹、心迹——河北省第三次全国文物普查队员手记汇编<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030455765</td>
+                      <td>作者：河北省文物局</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-01-28</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：缺货</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥80.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：第三次全国文物普查是国务院部署的一项重要文化资源调查，河北省近800名普查队员用五年的时间在全省18.8万平方公里的土地上进行了拉网式调查，...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=150969"><img src="book/2016/lt/9787030458629-001001-fcv_lt-v001.jpg" alt="快速心律失常全三维介入诊疗" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150969" class="f6">
+                                                    快速心律失常全三维介入诊疗<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030458629</td>
+                      <td>作者：钟国强,姚焰</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-10-12</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：缺货</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥128.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书共12章，第一章到第三章介绍快速心律失常全三维介入诊疗临床研究现状、三维标测系统基础知识及导管消融能源，第四章到第十二章系统阐述三维标测...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150968"><img src="book/2016/lt/9787030452405-001001-fcv_lt-v001.jpg" alt="中国蝙蝠寄生蠕虫" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150968" class="f6">
+                                                    中国蝙蝠寄生蠕虫<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030452405</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-01-21</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：8</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥66.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书系统介绍了中国蝙蝠寄生蠕虫在动物界中的分类地位、研究历史和种群生态学，尤其重点阐述了蝙蝠寄生蠕虫的形态结构特征、宿主和分类问题。在蝙蝠寄...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=150967"><img src="book/2018/lt/9787030432223-001003-fcv_lt.jpg" alt="生命科学与伦理" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150967" class="f6">
+                                                    生命科学与伦理<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030432223</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-03-01</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥39.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书是一本深入浅出，将科学知识与人文关怀有机结合的生命伦理读本，具有较为鲜明的时代特点。全书共分十章，第一章为绪论，第二章到第十章依次介绍了...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150966"><img src="book/2016/lt/9787030445049-001001-fcv_lt-v001.jpg" alt="植物细胞分化与器官发生" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150966" class="f6">
+                                                    植物细胞分化与器官发生<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030445049</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-06-23</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥158.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书以国家自然科学基金委员会“植物细胞分化与器官发生”创新生群体成员的研究成果和研究方向为主线，围绕细胞分裂和分化、器官发生生和发育这些基本...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=150965"><img src="book/2016/lt/9787030440044-001001-fcv_lt-v001.jpg" alt="绝缘及弱导电工程陶瓷电火花加工 = Electric Discharge Machining of Insulating and Weakly Conductive Engineering Ceramics: 英文" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150965" class="f6">
+                                                    绝缘及弱导电工程陶瓷电火花加工 = Electric Discharge Machining of Insulating and Weakly Conductive Engineering Ceramics: 英文<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030440044</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-02-03</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥88.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：无...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150964"><img src="book/2016/lt/9787030455178-001001-fcv_lt-v001.jpg" alt="基于图像点特征的多视图三维重建" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150964" class="f6">
+                                                    基于图像点特征的多视图三维重建<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030455178</td>
+                      <td>作者：康来</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-11-26</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥60.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：基于图像的多视图三维重建研究如何从多幅二维图像中重构场景的三维几何结构，是计算机视觉的基本研究目标和热门研究方向。多视图三维重建的本质是从二...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=150963"><img src="book/2016/lt/9787030453600-001001-fcv_lt-v001.jpg" alt="高等数学" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150963" class="f6">
+                                                    高等数学<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030453600</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-08-21</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥56.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书是河南省数学教学指导委员会推荐用书. 本书根据地方院校高等数学课程教学大纲的基本要求, 结合作者多年的教学研究和教学经验编写而成,内容包...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=150962"><img src="book/2016/lt/9787030445070-001001-fcv_lt-v001.jpg" alt="医疗保险基金管理" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=150962" class="f6">
+                                                    医疗保险基金管理<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030445070</td>
+                      <td>作者：毛瑛,吴涛</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-06-29</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥43.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本教材是“全国高等学校医疗保险专业第一轮规划教材”之一，立足于我国新一轮医药卫生体制改革实际，广泛吸收国内外医疗保险基金管理的最新研究成果，...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=97141"><img src="book/2016/lt/9787030461988-001001-fcv_lt-v001.jpg" alt="串解金匮四十讲" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97141" class="f6">
+                                                    串解金匮四十讲<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030461988</td>
+                      <td>作者：张再良</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-11-23</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：缺货</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥80.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书以口语讲解的形式，把《金匮要略》的内容编排成四十讲，主要按照病证方药的内容，以原文的叙述为依据，以临床的治疗为立场，注意从历史进展的角度...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=97140"><img src="book/2016/lt/9787030461841-001001-fcv_lt-v001.jpg" alt="数学模型简明教程" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97140" class="f6">
+                                                    数学模型简明教程<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030461841</td>
+                      <td>作者：朱婧,胡志兴,郑连存</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-12-25</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥27.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书侧重于数学建模知识的了解和数学建模能力及意识的培养,案例丰富,由浅入深,便于学生自学和教师教学？？ 本着简明和实用的两个原则,书中的内容...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=97132"><img src="book/2018/lt/9787030471031-001003-fcv_lt.jpg" alt="高中数学实验活动选编" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97132" class="f6">
+                                                    高中数学实验活动选编<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030471031</td>
+                      <td>作者：冯伟贞</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：数学教学技能系列丛书</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-01-01</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥69.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书采用了45个高中数学实验活动设计，对中学数学实验活动的概念、教学原则及教学组织方法进行了深入解读.全书共分11章，包括数学实验活动与数学...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=97130"><img src="book/2016/lt/9787030461285-001001-fcv_lt-v001.jpg" alt="地理信息系统导论（原著第8版）" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97130" class="f6">
+                                                    地理信息系统导论（原著第8版）<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030461285</td>
+                      <td>作者：(美)张康聪著;陈健飞 等译</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-01-18</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：缺货</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥69.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：本书旨在提供地理信息系统(GIS) 概念和实践的坚实基础, 自第1 版发行13 年来已成为国内外发行量最大的同名教材, 堪称经典。2015 ...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=97112"><img src="book/2016/lt/9787030424686-001001-fcv_lt-v001.jpg" alt="环境税理论和实践----基于西方先进国家的成功经验分析" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97112" class="f6">
+                                                    环境税理论和实践----基于西方先进国家的成功经验分析<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030424686</td>
+                      <td>作者：</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2016-02-26</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：缺货</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥58.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：在中国经济实现30多年高速增长的背后,环境污染和生态失衡等问题日趋严重,给经济的可持续发展带来了极大的负面影响,政府寻找有效的治理工具和政策...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="">
+               
+                <li class="thumb"><a href="goods.php?id=97110"><img src="book/2016/lt/9787030437594-001001-fcv_lt-v001.jpg" alt="国民经济统计学--国民经济核算原理（第二版）" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97110" class="f6">
+                                                    国民经济统计学--国民经济核算原理（第二版）<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030437594</td>
+                      <td>作者：杨灿</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：经济与管理类统计学系列教材</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-12-28</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥45.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                                <ul class="clearfix bgcolor"id="bgcolor">
+               
+                <li class="thumb"><a href="goods.php?id=97105"><img src="book/2016/lt/9787030435989-001001-fcv_lt-v001.jpg" alt="中国社会治理发展报告2015" /></a></li>
+                <li class="goodsName" style='width:720px'>
+                  <table width="100%">
+                    <tr>
+                      <td style="width:60%">
+                        <a href="goods.php?id=97105" class="f6">
+                                                    中国社会治理发展报告2015<br />
+                                                  </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>副书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>书号：9787030435989</td>
+                      <td>作者：西安交通大学,中国管理问题研究中心</td>
+                    </tr>
+                    <tr>
+                      <td>丛书名：</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>出版日期：2015-03-25</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>库存：可供</td>
+                      <td>图书介质：纸质书                      </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        定价：<font class="market" style="padding-right:10px;">￥68.00元</font> 
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>内容简介：...</td>
+                    </tr>
+
+                </table>
+    
+                </li>
+                </ul>
+                                                </div>
+                       </form>
+          <script type="text/javascript">
+                var button_compare = "比较选定商品";
+                var exist = "您已经选择了%s";
+                var count_limit = "最多只能选择4个商品进行对比";
+                var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+        
+				                var button_compare = '';
+                                var exist = "您已经选择了%s";
+                                var count_limit = "最多只能选择4个商品进行对比";
+                                var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+                
+
+        var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
+        window.onload = function()
+        {
+          Compare.init();
+          fixpng();
+        }
+	var btn_buy = "购买";
+	var is_cancel = "取消";
+	var select_spe = "请选择商品属性";
+        </script>
+                </div>
+      </div>
+      <div class="blank"></div>
+      
+<form name="selectPageForm" action="/search.php" method="get">
+
+
+ <div id="pager" class="pagebar">
+  <span class="f_l " style="margin-right:10px;">总计 <b>34252</b>  个记录</span>
+  <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=1">第一页 ...</a>  <a class="prev" href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=733">上一页</a>                  <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=732">[732]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=733">[733]</a>
+                      <span class="page_now">734</span>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=735">[735]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=736">[736]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=737">[737]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=738">[738]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=739">[739]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=740">[740]</a>
+                      <a href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=741">[741]</a>
+            
+  <a class="next" href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=735">下一页</a>  <a class="last" href="search.php?keywords=&category=0&support=&brand=0&sort=relevant&order=DESC&min_price=0&max_price=0&action=&intro=&goods_type=0&sc_ds=0&outstock=0&page=1713">...最末页</a>                      <input type="hidden" name="keywords" value="" />
+                            <input type="hidden" name="category" value="0" />
+                          <input type="hidden" name="support" value="" />
+                          <input type="hidden" name="brand" value="0" />
+                          <input type="hidden" name="sort" value="relevant" />
+                          <input type="hidden" name="order" value="DESC" />
+                          <input type="hidden" name="min_price" value="0" />
+                          <input type="hidden" name="max_price" value="0" />
+                          <input type="hidden" name="action" value="" />
+                          <input type="hidden" name="intro" value="" />
+                          <input type="hidden" name="goods_type" value="0" />
+                          <input type="hidden" name="sc_ds" value="0" />
+                          <input type="hidden" name="outstock" value="0" />
+              <kbd style="float:left; margin-left:8px; position:relative; bottom:3px;"><!--<input type="text" name="page" onkeydown="if(event.keyCode==13)selectPage(this)" size="3" class="B_blue" />--></kbd>
+    </div>
+
+
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+
+//-->
+</script>
+   
+  </div>
+  
+</div>
+
+<link href="themes/ecmoban_jindong2013/base.css" rel="stylesheet" type="text/css">
+<link href="themes/ecmoban_jindong2013/home.css" rel="stylesheet" type="text/css">
+<div class="w">
+	<div id="service-2013" class="clearfix">
+	   		<dl class="fore1">
+			<dt><b></b><strong>帮助中心</strong></dt>
+			<dd>
+                                             <div><a href="article.php?id=5" title="公司简介">公司简介</a></div>
+                                            <div><a href="article.php?id=29" title="联系我们">联系我们</a></div>
+                                            <div><a href="article.php?id=30" title="常见问题">常见问题</a></div>
+                                          			</dd>
+		</dl>
+        		<dl class="fore2">
+			<dt><b></b><strong>新手上路</strong></dt>
+			<dd>
+                                             <div><a href="article.php?id=19" title="发票制度">发票制度</a></div>
+                                            <div><a href="article.php?id=20" title="积分说明">积分说明</a></div>
+                                            <div><a href="article.php?id=21" title="购物指南">购物指南</a></div>
+                                          			</dd>
+		</dl>
+        		<dl class="fore3">
+			<dt><b></b><strong>配送方式</strong></dt>
+			<dd>
+                                             <div><a href="article.php?id=23" title="配送时间及费用">配送时间及费用</a></div>
+                                            <div><a href="article.php?id=24" title="配送查询说明">配送查询说明</a></div>
+                                            <div><a href="article.php?id=25" title="配送范围">配送范围</a></div>
+                                                               <div><a href="http://m.kuaidi100.com" target="_blank">快递查询</a></div>
+                     			</dd>
+		</dl>
+        		<dl class="fore4">
+			<dt><b></b><strong>售后服务</strong></dt>
+			<dd>
+                                             <div><a href="article.php?id=26" title="退换货说明">退换货说明</a></div>
+                                            <div><a href="article.php?id=27" title="退换货流程">退换货流程</a></div>
+                                            <div><a href="article.php?id=28" title="投诉或建议">投诉或建议</a></div>
+                                          			</dd>
+		</dl>
+        		<dl class="fore5">
+			<dt><b></b><strong>经营资质</strong></dt>
+			<dd>
+                                             <div><a href="article.php?id=1020" title="营业执照">营业执照</a></div>
+                                            <div><a href="article.php?id=1021" title="出版社经营许可证">出版社经营许可证</a></div>
+                                          			</dd>
+		</dl>
+        </div>		
+</div>
+
+<div class="footer w">
+  <table width="600" border="0" style="margin-left:150px;">
+    <tr>
+      <td>
+        <p>中国科技出版传媒股份有限公司　版权所有　      <a href='http://www.miitbeian.gov.cn/'>京ICP备14028887号-5</a>　  京公网安备110402440022号</p>
+        <p>北京东黄城根北街16号          邮编：100717    Email:webmaster@mail.sciencep.com</p>
+      </td>
+      <td>
+        
+        <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e12112711010037224000000&size=0"></script>
+        <span style="display:inline-block;position:relative;width:auto;">
+          <a href="https://ss.knet.cn/verifyseal.dll?sn=e12112711010037224000000&ct=df&a=1&pa=0.5448753884993494" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display:inline-block;">
+            <img src="http://rr.knet.cn/static/images/logo/cnnic.png" style="border:none;" oncontextmenu="return false;" alt="可信网站">
+          </a>
+        </span>
+        
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.ecsponline.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.ecsponline.com/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+
+</body>
+</html>
